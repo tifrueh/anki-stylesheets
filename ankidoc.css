@@ -11,6 +11,16 @@
     padding-top: 5%;
 }
 
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+
+.imageblock > .title {
+    font-style: italic;
+}
+
 p code {
     background: #282C34;
     color: #ABB2BF;
@@ -31,6 +41,10 @@ pre {
 
 .nightMode pre, .nightMode p code {
     border: 1px solid #ABB2BF;
+}
+
+.stemblock {
+    overflow-x: auto;
 }
 
 table, th, td {
