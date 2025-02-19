@@ -69,6 +69,7 @@ pre {
 
 .stemblock {
     overflow-x: auto;
+    overflow-y: clip;
 }
 
 table, th, td {
