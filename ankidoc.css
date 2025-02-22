@@ -52,6 +52,10 @@ img {
     font-style: italic;
 }
 
+dl dt {
+    font-weight: bold;
+}
+
 p code {
     font-size: .7em;
     padding: .2em .4em;
