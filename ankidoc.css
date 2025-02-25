@@ -81,7 +81,7 @@ table.frame-all {
 }
 
 table.tableblock, th.tableblock, td.tableblock {
-    border: 1px solid var(---foreground);
+    border: 1px solid var(--foreground);
 }
 
 table {
