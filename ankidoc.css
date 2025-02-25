@@ -89,8 +89,12 @@ table {
     border-collapse: collapse;
 }
 
-tr, td {
+tr, td, th {
     padding: .5625em .625em
+}
+
+th > *, td > * {
+    margin: 0;
 }
 
 .hdlist > table {
