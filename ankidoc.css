@@ -76,17 +76,35 @@ pre {
     overflow-y: clip;
 }
 
-table, th, td {
-    border: 1px solid;
-    border-collapse: collapse;
+table.frame-all {
+    border-width: 1px;
 }
 
-th, td {
-    padding: .5em;
+table.tableblock, th.tableblock, td.tableblock {
+    border: 1px solid var(---foreground);
 }
 
 table {
     width: 100%;
+    border-collapse: collapse;
+}
+
+tr, td {
+    padding: .5625em .625em
+}
+
+.hdlist > table {
+    border: 0;
+}
+
+td.hdlist1 {
+    font-weight: bold;
+    padding: 0 .625em;
+}
+
+td.hdlist2 {
+    vertical-align: top;
+    padding: 0 .625em;
 }
 
 pre { line-height: 125%; }
