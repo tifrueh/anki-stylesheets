@@ -37,6 +37,31 @@
     scrollbar-color: var(--cyan) var(--background);
 }
 
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, #toctitle, .sidebarblock>.content>.title, h4, h5, h6, pre, form, p, blockquote, th, td {
+    margin:0;
+    padding:0;
+}
+
+.subheader, .admonitionblock td.content>.title, .audioblock>.title, .exampleblock>.title, .imageblock>.title, .listingblock>.title, .literalblock>.title, .stemblock>.title, .openblock>.title, .paragraph>.title, .quoteblock>.title, table.tableblock>.title, .verseblock>.title, .videoblock>.title, .dlist>.title, .olist>.title, .ulist>.title, .qlist>.title, .hdlist>.title {
+    line-height:1.45;
+    font-weight:400;
+    margin-top:0;
+    margin-bottom:.25em
+}
+
+h1, h2, h3, #toctitle, .sidebarblock>.content>.title, h4, h5, h6 {
+    text-rendering:optimizeLegibility;
+    margin-top:1em;
+    margin-bottom:.5em;
+    line-height:1.0125em;
+}
+
+p {
+    line-height:1.6;
+    margin-bottom:1.25em;
+    text-rendering:optimizeLegibility;
+}
+
 code {
     font-family: 'Source Code Pro', monospace;
     color: var(--foreground);
@@ -97,18 +122,27 @@ th > *, td > * {
     margin: 0;
 }
 
-.hdlist > table {
-    border: 0;
+.hdlist>table, .colist>table {
+    border:0;
+    background:none;
+}
+
+.hdlist>table>tbody>tr, .colist>table>tbody>tr {
+    background:none;
+}
+
+td.hdlist1, td.hdlist2 {
+    vertical-align:top;
+    padding:0 .625em
 }
 
 td.hdlist1 {
-    font-weight: bold;
-    padding: 0 .625em;
+    font-weight:bold;
+    padding-bottom:1.25em;
 }
 
 td.hdlist2 {
-    vertical-align: top;
-    padding: 0 .625em;
+    word-wrap:anywhere
 }
 
 pre { line-height: 125%; }
